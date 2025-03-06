@@ -1,0 +1,37 @@
+Call:
+coxph(formula = formula_cox, data = df_cox2025)
+
+  n= 14541, number of events= 861 
+
+                    coef exp(coef) se(coef)      z Pr(>|z|)    
+NEUMONIA1        2.24826   9.47120  0.08001 28.099  < 2e-16 ***
+DIABETES1        0.48942   1.63137  0.08329  5.876 4.20e-09 ***
+EPOC1            0.30527   1.35699  0.12038  2.536  0.01122 *  
+ASMA1           -0.33484   0.71545  0.22224 -1.507  0.13189    
+INMUSUPR1        0.12081   1.12841  0.13686  0.883  0.37739    
+HIPERTENSION1    0.47503   1.60807  0.08463  5.613 1.99e-08 ***
+OTRA_COM1        0.18645   1.20496  0.11508  1.620  0.10521    
+CARDIOVASCULAR1  0.08528   1.08902  0.11796  0.723  0.46974    
+OBESIDAD1       -0.19879   0.81972  0.11657 -1.705  0.08814 .  
+RENAL_CRONICA1   0.31831   1.37480  0.10927  2.913  0.00358 ** 
+TABAQUISMO1      0.35320   1.42362  0.11599  3.045  0.00233 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+                exp(coef) exp(-coef) lower .95 upper .95
+NEUMONIA1          9.4712     0.1056    8.0965    11.079
+DIABETES1          1.6314     0.6130    1.3857     1.921
+EPOC1              1.3570     0.7369    1.0718     1.718
+ASMA1              0.7154     1.3977    0.4628     1.106
+INMUSUPR1          1.1284     0.8862    0.8629     1.476
+HIPERTENSION1      1.6081     0.6219    1.3623     1.898
+OTRA_COM1          1.2050     0.8299    0.9616     1.510
+CARDIOVASCULAR1    1.0890     0.9183    0.8642     1.372
+OBESIDAD1          0.8197     1.2199    0.6523     1.030
+RENAL_CRONICA1     1.3748     0.7274    1.1098     1.703
+TABAQUISMO1        1.4236     0.7024    1.1341     1.787
+
+Concordance= 0.834  (se = 0.007 )
+Likelihood ratio test= 1433  on 11 df,   p=<2e-16
+Wald test            = 1314  on 11 df,   p=<2e-16
+Score (logrank) test = 2084  on 11 df,   p=<2e-16
