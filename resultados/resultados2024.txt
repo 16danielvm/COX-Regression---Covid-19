@@ -1,0 +1,25 @@
+Call:
+coxph(formula = formula_cox, data = df_cox2024)
+
+  n= 14003, number of events= 818 
+
+                    coef exp(coef) se(coef)      z Pr(>|z|)    
+DIABETES1        0.76376   2.14633  0.08707  8.772  < 2e-16 ***
+HIPERTENSION1    0.86069   2.36479  0.08649  9.952  < 2e-16 ***
+CARDIOVASCULAR1  0.53317   1.70432  0.12055  4.423 9.74e-06 ***
+OBESIDAD1       -0.30812   0.73483  0.11837 -2.603  0.00924 ** 
+TABAQUISMO1      0.67256   1.95925  0.11667  5.765 8.18e-09 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+                exp(coef) exp(-coef) lower .95 upper .95
+DIABETES1          2.1463     0.4659    1.8096    2.5457
+HIPERTENSION1      2.3648     0.4229    1.9961    2.8016
+CARDIOVASCULAR1    1.7043     0.5867    1.3457    2.1586
+OBESIDAD1          0.7348     1.3609    0.5827    0.9267
+TABAQUISMO1        1.9592     0.5104    1.5588    2.4626
+
+Concordance= 0.69  (se = 0.009 )
+Likelihood ratio test= 439.2  on 5 df,   p=<2e-16
+Wald test            = 524.9  on 5 df,   p=<2e-16
+Score (logrank) test = 611.1  on 5 df,   p=<2e-16
