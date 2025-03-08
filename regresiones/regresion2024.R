@@ -20,8 +20,8 @@ df_cox2024[comorbilidades] <- lapply(df_cox2024[comorbilidades], factor)
 
 # Definir la fórmula del modelo de Cox
 formula_cox <- as.formula("Surv(DIAS_SINTOMAS_DEF, DEFUNCION) ~ NEUMONIA + DIABETES + EPOC + 
-                          ASMA + INMUSUPR + HIPERTENSION + 
-                          CARDIOVASCULAR + OBESIDAD + RENAL_CRONICA + TABAQUISMO")
+                          INMUSUPR + HIPERTENSION + 
+                          CARDIOVASCULAR + RENAL_CRONICA + TABAQUISMO")
 
 
 # Ajustar el modelo de Cox
