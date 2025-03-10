@@ -44,9 +44,9 @@ vif(modelo_cox)
 
 ### Estratificación
 modelo_cox_estrat <- coxph(Surv(DIAS_SINTOMAS_DEF, DEFUNCION) ~ 
-                             strata(NEUMONIA) + DIABETES + EPOC + ASMA + 
+                             strata(NEUMONIA) + DIABETES + EPOC + 
                              INMUSUPR + HIPERTENSION + 
-                             strata(CARDIOVASCULAR) + OBESIDAD + RENAL_CRONICA + TABAQUISMO,
+                             strata(CARDIOVASCULAR) + RENAL_CRONICA + TABAQUISMO,
                            data = df_cox2024)
 # Ver el resumen del modelo
 summary(modelo_cox_estrat)
